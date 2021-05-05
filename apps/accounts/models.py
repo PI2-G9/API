@@ -34,12 +34,10 @@ class UserProfile(models.Model):
 
 class PhotoUser(models.Model):
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name="photos")
-    photo1 = models.ImageField(upload_to='photo')
-    photo2 = models.ImageField(upload_to='photo')
-    photo3 = models.ImageField(upload_to='photo')
+    photo_user = models.ImageField(upload_to='images/')
 
     def __str__(self):
-        return [self.photo1, self.photo2, self.photo3]
+        return self.photo_user
 
 
 class HistoricUser(models.Model):
@@ -49,4 +47,4 @@ class HistoricUser(models.Model):
     temp = models.CharField(max_length=2)
 
     def __str__(self):
-        return f"{self.user.nome} {'entrou' if self.entrance else 'saiu'} às {self.hora}"
+        return f"{self.user.nome} {'entrou' if self.entrance else 'saiu'} às {self.timestamp}"
