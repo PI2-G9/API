@@ -5,7 +5,7 @@ from django.urls import path
 from apps.accounts.views import UserProfileListCreateView
 
 accounts_urlpatterns = [
-    url(r'^api/v1/', include('djoser.urls')),
-    url(r'^api/v1/', include('djoser.urls.authtoken')),
-    path("api/v1/all-profiles", UserProfileListCreateView.as_view(), name="all-profiles"),
+    url(r'^accounts/', include('djoser.urls')),
+    url(r'^accounts/', include('djoser.urls.authtoken')),
+    path("accounts/all-profiles", UserProfileListCreateView.as_view(), name="all-profiles"),
 ]

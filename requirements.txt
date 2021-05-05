@@ -7,7 +7,10 @@ coreschema==0.0.4
 cryptography==3.4.7
 defusedxml==0.7.1
 Django==3.1.7
+django-composite-field==1.1.0
+django-cpf==0.1.0
 django-filter==2.4.0
+django-phone-field==1.8.1
 django-templated-mail==1.1.1
 djangorestframework==3.12.4
 djangorestframework-simplejwt==4.4.0
@@ -19,6 +22,7 @@ Jinja2==2.11.3
 Markdown==3.3.4
 MarkupSafe==1.1.1
 oauthlib==3.1.0
+pkg-resources==0.0.0
 pycparser==2.20
 PyJWT==2.0.1
 python3-openid==3.2.0
@@ -33,4 +37,4 @@ typing-extensions==3.7.4.3
 uritemplate==3.0.1
 urllib3==1.26.4
 zipp==3.4.1
-django-phone-field == 1.8.1
+Pillow >= 8.0

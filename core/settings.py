@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
+    'cpf_field',
+    'composite_field',
+
     #
     'apps.accounts'
 ]
