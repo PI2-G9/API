@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'composite_field',
 
     #
-    'apps.accounts'
+    'apps.accounts',
+    'apps.events',
+    'apps.profiles'
 ]
 
 MIDDLEWARE = [
