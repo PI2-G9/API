@@ -4,7 +4,6 @@ from cpf_field.models import CPFField
 from django.contrib.auth.models import User
 from composite_field import CompositeField
 from django.utils.translation import gettext_lazy as _
-from django.utils import timezone
 
 
 class EnderecoField(CompositeField):
@@ -14,9 +13,6 @@ class EnderecoField(CompositeField):
     numero = models.CharField(max_length=5)
     nome_cidade = models.CharField(max_length=30)
     estado = models.CharField('UF', max_length=2)
-    #
-    # def __str__(self):
-    #     return f'{self.nome_cidade} - {self.estado}'
 
 
 class Profile(models.Model):

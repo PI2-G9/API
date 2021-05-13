@@ -1,10 +1,8 @@
-# from django.shortcuts import render
 from rest_framework.generics import (ListCreateAPIView)
 from rest_framework import serializers
 from rest_framework.permissions import IsAuthenticated
 
 from apps.events.models import Event
-from apps.profiles.models import Profile
 
 
 class EventSerializer(serializers.ModelSerializer):
@@ -26,5 +24,5 @@ class EventList(ListCreateAPIView):
         queryset = Event.objects.order_by('-id')[first:last]
         cpf = self.request.query_params.get('cpf')
         if cpf is not None:
-            queryset = Event.objects.filter(user=cpf).order_by('-id')[first:last][::-1]
+            queryset = Event.objects.filter(user=cpf).order_by('-id')[first:last]
         return queryset
