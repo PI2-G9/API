@@ -99,44 +99,20 @@ Exemplo de resposta:
 
 Recebe um json como o seguinte para cadastrar um cliente.
 
-```javascript
+```json
 {
-    "cpf"
-:
-    "",
-        "nome"
-:
-    "",
-        "data_nascimento"
-:
-    null,
-        "telefone"
-:
-    "",
-        "photo"
-:
-    null,
-        "is_employee"
-:
-    false,
-        "endereco_cep"
-:
-    "",
-        "endereco_nome_rua"
-:
-    "",
-        "endereco_complemento"
-:
-    "",
-        "endereco_numero"
-:
-    "",
-        "endereco_nome_cidade"
-:
-    "",
-        "endereco_estado"
-:
-    ""
+  "cpf": "",
+  "nome": "",
+  "data_nascimento": null,
+  "telefone": "",
+  "photo": null,
+  "is_employee": false,
+  "endereco_cep": "",
+  "endereco_nome_rua": "",
+  "endereco_complemento": "",
+  "endereco_numero": "",
+  "endereco_nome_cidade": "",
+  "endereco_estado": ""
 }
 ```
 
@@ -169,17 +145,14 @@ Retorna lista de todos os usuários contendo nome, foto e cpf.
 
 Cria um novo evento de entrada ou saída de cliente, json de exemplo:
 
-```javascript
+```json
 {
-    "entrance"
-:
-    false, // Foi entrada?
-        "temp"
-:
-    "36", // Temperatura
-        "user"
-:
-    11090210035 // cpf
+  "entrance": false,
+  // Foi entrada?
+  "temp": "36",
+  // Temperatura
+  "user": 11090210035
+  // cpf
 }
 ```
 
