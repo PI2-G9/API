@@ -5,7 +5,7 @@
 - python 3.6^
 - pip
 
-Utilizar os seguintes comandos na pasta raiz do projeto.
+Os comandos devem ser executados na pasta raiz do projeto.
 
 ## 1. Criar uma venv (*opcional*):
 
@@ -16,8 +16,6 @@ Utilizar os seguintes comandos na pasta raiz do projeto.
 > $ source <nome_da_venv>/bin/activate
 
 ## 2. Instalar os pacotes necessários para rodar o projeto:
-
-Utilizar o seguintes comando na pasta raiz do projeto:
 
 > $ pip install -r requirements.txt
 
@@ -103,18 +101,42 @@ Recebe um json como o seguinte para cadastrar um cliente.
 
 ```javascript
 {
-    "cpf": "",
-    "nome": "",
-    "data_nascimento": null,
-    "telefone": "",
-    "photo": null,
-    "is_employee": false,
-    "endereco_cep": "",
-    "endereco_nome_rua": "",
-    "endereco_complemento": "",
-    "endereco_numero": "",
-    "endereco_nome_cidade": "",
-    "endereco_estado": ""
+    "cpf"
+:
+    "",
+        "nome"
+:
+    "",
+        "data_nascimento"
+:
+    null,
+        "telefone"
+:
+    "",
+        "photo"
+:
+    null,
+        "is_employee"
+:
+    false,
+        "endereco_cep"
+:
+    "",
+        "endereco_nome_rua"
+:
+    "",
+        "endereco_complemento"
+:
+    "",
+        "endereco_numero"
+:
+    "",
+        "endereco_nome_cidade"
+:
+    "",
+        "endereco_estado"
+:
+    ""
 }
 ```
 
@@ -149,9 +171,15 @@ Cria um novo evento de entrada ou saída de cliente, json de exemplo:
 
 ```javascript
 {
-    "entrance": false, // Foi entrada?
-    "temp": "36", // Temperatura
-    "user": 11090210035 // cpf
+    "entrance"
+:
+    false, // Foi entrada?
+        "temp"
+:
+    "36", // Temperatura
+        "user"
+:
+    11090210035 // cpf
 }
 ```
 
