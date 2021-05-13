@@ -1,9 +1,9 @@
-from django.db import models
-from phone_field import PhoneField
+from composite_field import CompositeField
 from cpf_field.models import CPFField
 from django.contrib.auth.models import User
-from composite_field import CompositeField
+from django.db import models
 from django.utils.translation import gettext_lazy as _
+from phone_field import PhoneField
 
 
 class EnderecoField(CompositeField):

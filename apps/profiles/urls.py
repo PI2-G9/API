@@ -1,4 +1,5 @@
 from django.urls import path
+
 from .views import ProfileList, ProfileCreate, ProfilePhotoList
 
 app_name = 'events'

@@ -1,4 +1,5 @@
 from django.urls import path
+
 from .views import EventList
 
 app_name = 'events'

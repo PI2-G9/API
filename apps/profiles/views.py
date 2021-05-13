@@ -1,7 +1,8 @@
 from rest_framework.generics import (CreateAPIView, ListAPIView)
 from rest_framework.permissions import IsAuthenticated
-from .models import Profile
+
 from apps.profiles.serializers import ProfileCreateSerializer, ProfileListSerializer, ProfilePhotoListSerializer
+from .models import Profile
 
 
 # Create your views here.
